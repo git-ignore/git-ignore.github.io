@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/emails-editor/emails-editor.js"></script>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 80px;
+      background: lightgrey;
+    }
+  </style>
+
+  <body>
+    <div id="container"></div>
+  </body>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      const container = document.getElementById("container");
+      const emailsEditor = EmailEditor({ container });
+
+      console.log("EmailsEditor abstract instance:", emailsEditor);
+    };
+  </script>
+</html>
